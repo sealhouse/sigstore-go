@@ -11,4 +11,6 @@ jobs:
     uses: sealhouse/ci/.github/workflows/pr.yaml@0921e2399d488dd3b68f112ab1b6c819387aec70
     with:
       ci-ref: 0921e2399d488dd3b68f112ab1b6c819387aec70
-
+    secrets:
+      dispatch-app-id: ${{ secrets.SEALHOUSE_DISPATCH_APP_ID }}
+      dispatch-app-key: ${{ secrets.SEALHOUSE_DISPATCH_APP_KEY }}
